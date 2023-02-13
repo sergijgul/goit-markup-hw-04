@@ -231,13 +231,13 @@ display: flex;
 gap: 24px;
 }
 .list-background{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--second-bg-color);
-    margin-bottom: 8px;
-    padding-bottom: 24px;
-    padding-top: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--second-bg-color);
+margin-bottom: 8px;
+width: 264px;
+height: 112px;
 }
 
 .post-title{
@@ -511,10 +511,7 @@ margin-right: 24px;
 margin-bottom: 48px;
 background: var(--main-bg-color);
 }
-.flex-element:hover{
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 .flex-element:nth-child(3n){
 margin-right: 0;
@@ -544,19 +541,23 @@ color: var(--second-text-color);
 
 .link{
 text-decoration: none;
+display: block;
 }
+.link:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .footer{
-display: flex;
-gap: 120px;
 background-color: var(--second-text-color);
 padding-top: 100px;
 padding-bottom: 100px;
 }
-.footer-container{
-margin-right: 0;
-margin-left: 0;
-max-width: 264px;
+.footer-items{
+display: flex;
+gap: 120px;
 }
+
 .logo-footer{
 font-family: 'Raleway', sans-serif;
 font-style: normal;
